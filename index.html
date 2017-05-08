@@ -17,27 +17,45 @@
     </head>
     <body>
         <div id="header">
-            <a href="/"><img src="images/logo.png" class="center-block" alt="logo"></a>
+            <a href="/"><img src="images/logo.png" class="image-responsive center-block" alt="logo"></a>
         </div>
         <nav id="navbar"> 
             <ul class="nav nav-justified">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">CORPORATE</a></li>
-                <li><a href="#">TESTIMONIALS</a></li>
-                <li role="presentation" class="dropdown">
-                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" class="dropdown-toggle" aria-expanded="false">
-                        MEDICAL DEVICES<span class="fa fa-angle-double-down"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Drop A</a></li>
-                        <li><a href="#">Drop B</a></li>
-                        <li><a href="#">Drop C</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <!--
+<li role="presentation" class="dropdown">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" class="dropdown-toggle" aria-expanded="false">
+MEDICAL DEVICES<span class="fa fa-angle-double-down"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="#">Drop A</a></li>
+<li><a href="#">Drop B</a></li>
+<li><a href="#">Drop C</a></li>
+</ul>
+</li>
+-->
             </ul>
         </nav>
         <div class="slideshow-container">
-
+            <div id="carousel" class="carousel slide" data="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <p>test</p>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
         <div class="content">
             <div class="container">
@@ -86,14 +104,12 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="container">
-                <ul class="nav nav-justified">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">CORPORATE</a></li>
-                    <li><a href="#">TESTIMONIALS</a></li>
-                </ul>
-                <p>Copyright © Medical All Rights Reserved.</p>
-            </div>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Legal Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+            </ul>
+            <p>Copyright © Optimizit Medical All Rights Reserved.</p>
         </footer>
 
         <!-- Bootstrap core JavaScript ================================================== -->

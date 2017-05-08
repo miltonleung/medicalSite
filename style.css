@@ -2,18 +2,20 @@ html * {
     font-family: 'Lato', sans-serif;
     font-size: 10px;
 }
+html,
+body {
+    height: 100%;
+}
 h1 {
     color: ##00566e;
     font-size: 2.7em;
 }
 #header {
-    max-width: 100%;
-    height: 170px;
     padding: 10px;
 }
 #header img {
     vertical-align: middle;
-    height: 100%;
+    max-height: 170px;
 }
 #navbar {
     background-color: #f7f7f7;
@@ -48,19 +50,20 @@ h1 {
     padding-left: 1em;
 }
 .slideshow-container {
-    height: 350px;
-    background-color: gray;
+    height: 30vh;
 }
-
+.carousel {
+    height: 100%;
+}
 .content {
-    padding-top: 10em;
+/*    padding-top: 10em;*/
 }
 .content > .container {
-    padding-bottom: 20em;
+/*    padding-bottom: 20em;*/
 }
 #sample-image {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     background-color: gray;
 }
 .content p {
@@ -80,23 +83,46 @@ h1 {
 }
 
 .footer {
+    position: fixed;
     bottom: 0;
     width: 100%;
-    border-top: 0.5px solid #eee;
+    box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.18);
+    height: 3.5em;
+    line-height: 3.5em;
+    background: #F9F9F9;   
 }
-.container {
-    margin: 0 auto;
-    text-align: center;
+.footer ul {
+    right: 0;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-.footer li {
-    text-transform: uppercase;
+.footer ul li {
+    display: inline;
+    padding: 0 2em;
+}
+.footer li a {
     color: #005571;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    font-size: 1.1em;
 }
 .footer li > a:hover,
 .footer li > a:focus {
     background-color: white;
 }
 .footer p {
-    color: #7a7a7a;
-    padding-top: 15px;
+    color: #005571;
+    left: 0;
+    position: fixed;
+    margin-left: 2em;
+    font-size: 1.1em;
+}
+
+@media (min-width:768px){
+    .footer ul > li:not(:last-child) {
+        border-right:1px solid #005571;
+    }
 }
