@@ -14,11 +14,11 @@ a {
     cursor: pointer;
 }
 #header {
-    padding: 10px;
+    padding: 20px;
 }
 #header img {
     vertical-align: middle;
-    max-height: 170px;
+    max-height: 160px;
 }
 #navbar {
     background-color: #f7f7f7;
