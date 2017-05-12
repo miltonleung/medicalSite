@@ -20,11 +20,11 @@
             <a href="/"><img src="images/logo.svg" class="image-responsive center-block" alt="logo"></a>
         </div>
         <nav id="navbar"> 
-            <ul class="nav nav-justified">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="navbar-list" class="nav nav-justified">
+                <li><a id="home-link" class="nav-links"  tabindex="-1">Home</a></li>
+                <li><a id="services-link" class="nav-links" tabindex="-1">Services</a></li>
+                <li><a id="about-link" class="nav-links" tabindex="-1">About</a></li>
+                <li><a id="contact-link" class="nav-links" tabindex="-1">Contact</a></li>
                 <!--
 <li role="presentation" class="dropdown">
 <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" class="dropdown-toggle" aria-expanded="false">
@@ -40,9 +40,28 @@ MEDICAL DEVICES<span class="fa fa-angle-double-down"></span>
             </ul>
         </nav>
         <div class="slideshow-container">
-            <div id="carousel" class="carousel slide" data="carousel">
+            <div id="carousel" class="carousel slide" data="carousel" data-interval="false">
                 <div class="carousel-inner">
                     <div class="item active">
+                        <div id="services">
+                            <h1>HOME</h1>
+                            <div class="container">
+                                <div class="col-xs-12 col-md-6 service-block service-block-left">
+                                    <img src="images/clipboard.svg" class="service-icon" alt="consultation">
+                                    <h3>CONSULTATION &amp; EVALUATION</h3>
+                                    <p>Our team has knowledge and experiences throughout the medical field; from ER equipment to OR equipment, to ICU equipment and more. We offer our expertise before we perform any work. We assess each situation differently and communicate with you every step of the way.</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6 service-block service-block-right">
+                                    <img src="images/screw.svg" class="service-icon" alt="consultation">
+                                    <h3>PREVENTATIVE MAINTENANCE &amp; EQUIPMENT REPAIR</h3>
+                                    <p>Our Biomedical Engineering Technologists are trained in Preventative Maintenance and Corrective Work. Preventative Maintenance can be annual device inspection and/or new device acceptance. Corrective work is fancy for 'repair'. 
+                                        <br /> <br />
+                                        In emergency and work cases where you need a device accepted or repaired, we will do what we can to get the job done as fast and as safe as possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
                         <div id="services">
                             <h1>SERVICES</h1>
                             <div class="container">
@@ -61,13 +80,51 @@ MEDICAL DEVICES<span class="fa fa-angle-double-down"></span>
                             </div>
                         </div>
                     </div>
+                    <div class="item">
+                        <div id="services">
+                            <h1>ABOUT</h1>
+                            <div class="container">
+                                <div class="col-xs-12 col-md-6 service-block service-block-left">
+                                    <img src="images/clipboard.svg" class="service-icon" alt="consultation">
+                                    <h3>CONSULTATION &amp; EVALUATION</h3>
+                                    <p>Our team has knowledge and experiences throughout the medical field; from ER equipment to OR equipment, to ICU equipment and more. We offer our expertise before we perform any work. We assess each situation differently and communicate with you every step of the way.</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6 service-block service-block-right">
+                                    <img src="images/screw.svg" class="service-icon" alt="consultation">
+                                    <h3>PREVENTATIVE MAINTENANCE &amp; EQUIPMENT REPAIR</h3>
+                                    <p>Our Biomedical Engineering Technologists are trained in Preventative Maintenance and Corrective Work. Preventative Maintenance can be annual device inspection and/or new device acceptance. Corrective work is fancy for 'repair'. 
+                                        <br /> <br />
+                                        In emergency and work cases where you need a device accepted or repaired, we will do what we can to get the job done as fast and as safe as possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div id="services">
+                            <h1>CONTACT</h1>
+                            <div class="container">
+                                <div class="col-xs-12 col-md-6 service-block service-block-left">
+                                    <img src="images/clipboard.svg" class="service-icon" alt="consultation">
+                                    <h3>CONSULTATION &amp; EVALUATION</h3>
+                                    <p>Our team has knowledge and experiences throughout the medical field; from ER equipment to OR equipment, to ICU equipment and more. We offer our expertise before we perform any work. We assess each situation differently and communicate with you every step of the way.</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6 service-block service-block-right">
+                                    <img src="images/screw.svg" class="service-icon" alt="consultation">
+                                    <h3>PREVENTATIVE MAINTENANCE &amp; EQUIPMENT REPAIR</h3>
+                                    <p>Our Biomedical Engineering Technologists are trained in Preventative Maintenance and Corrective Work. Preventative Maintenance can be annual device inspection and/or new device acceptance. Corrective work is fancy for 'repair'. 
+                                        <br /> <br />
+                                        In emergency and work cases where you need a device accepted or repaired, we will do what we can to get the job done as fast and as safe as possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carousel" data-slide="prev">
+                <a id="left-carousel" class="left carousel-control" href="#carousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#carousel" data-slide="next">
+                <a id="right-carousel" class="right carousel-control" href="#carousel" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -137,5 +194,6 @@ MEDICAL DEVICES<span class="fa fa-angle-double-down"></span>
         <script src="js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
