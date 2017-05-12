@@ -1,11 +1,12 @@
 $(document).ready(function () {
     var currentIndex = 0;
-    document.getElementById("home-link").focus();
-    
+    $("#home-link").addClass("selected");
     $("#navbar-list li").click(function() {
         var list = Array.prototype.slice.call( document.getElementById('navbar-list').children );
         var index = list.indexOf(this);
         $("#carousel").carousel(index);
+        $(".selected").removeClass("selected");
+        $(this.children[0]).addClass("selected");
     });
     
     $("#left-carousel").click(function() {
@@ -41,7 +42,7 @@ $(document).ready(function () {
             case 3:
                 id = "contact-link";
                 break;
-        }
-        document.getElementById(id).focus();
+        }        $(".selected").removeClass("selected");
+        $("#" + id).addClass("selected");
     }
 });
