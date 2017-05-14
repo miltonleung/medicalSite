@@ -8,7 +8,7 @@ $(document).ready(function () {
         $(".selected").removeClass("selected");
         $(this.children[0]).addClass("selected");
     });
-    
+
     $("#left-carousel").click(function() {
         if (currentIndex == 0) {
             currentIndex = 3;
@@ -17,7 +17,7 @@ $(document).ready(function () {
         }
         setSelected(currentIndex);
     });
-    
+
     $("#right-carousel").click(function() {
         if (currentIndex == 3) {
             currentIndex = 0;
@@ -26,7 +26,7 @@ $(document).ready(function () {
         }
         setSelected(currentIndex);
     });
-    
+
     function setSelected(index) {
         var id;
         switch (index) {
@@ -45,4 +45,25 @@ $(document).ready(function () {
         }        $(".selected").removeClass("selected");
         $("#" + id).addClass("selected");
     }
+
+    $("#load_privacy").click(function() {
+        var privModal = document.getElementById('privModal');
+        privModal.style.display = "block"
+    });
+    $("#load_tos").click(function() {
+        var tosModal = document.getElementById('tosModal');
+        tosModal.style.display = "block"
+    });
+    $("#load_legal").click(function() {
+        var legalModal = document.getElementById('legalModal');
+        legalModal.style.display = "block"
+    });
+    $(".close-modal").click(function () {
+        var legalModal = document.getElementById('legalModal');
+        var privModal = document.getElementById('privModal');
+        var tosModal = document.getElementById('tosModal');
+        privModal.style.display = "none";
+        tosModal.style.display = "none";
+        legalModal.style.display = "none";
+    });
 });
