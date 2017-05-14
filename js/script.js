@@ -26,6 +26,12 @@ $(document).ready(function () {
         }
         setSelected(currentIndex);
     });
+    
+    $("#contact-inline-link").click(function() {
+        $("#carousel").carousel(3);
+        $(".selected").removeClass("selected");
+        $("#contact-link").addClass("selected");
+    });
 
     function setSelected(index) {
         var id;
