@@ -12,6 +12,22 @@ h1 {
 }
 a {
     cursor: pointer;
+    color: #555;
+}
+.login {
+    position: absolute;
+    margin-top: 1em;
+    top: 0;
+    color: #6D6D6D;
+    font-size: 1.2em;
+}
+#header-right {
+    right: 0;
+    margin-right: 1em;
+}
+#header-left {
+    left: 0;
+    margin-left: 1em;
 }
 #header {
     padding: 2em;
@@ -83,6 +99,9 @@ a {
     padding-bottom: .5em;
     color: #8BC53B;
 }
+#home-list {
+    padding-right: 40px;
+}
 #services .service-block p{
     text-align: left;
 }
@@ -131,7 +150,7 @@ a {
     padding: 0 2em;
 }
 .footer li a {
-    color: #005571;
+    color: #6D6D6D;
     padding-top: 1em;
     padding-bottom: 1em;
     height: 100%;
@@ -142,7 +161,7 @@ a {
     background-color: white;
 }
 .footer p {
-    color: #005571;
+    color: #6D6D6D;
     left: 0;
     position: fixed;
     margin-left: 2em;
