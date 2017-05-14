@@ -61,6 +61,9 @@ a {
 .nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
 }
+#navbar .navbar-toggle .icon-bar {
+    background-color: #555;
+}
 .dropdown-menu {
     width: 18em;
 }

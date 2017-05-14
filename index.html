@@ -25,13 +25,22 @@
         <div id="header">
             <a href="/"><img src="images/logo.svg" class="image-responsive center-block" alt="logo"></a>
         </div>
-        <nav id="navbar"> 
-            <ul id="navbar-list" class="nav nav-justified">
-                <li><a id="home-link" class="nav-links"  tabindex="-1">Home</a></li>
-                <li><a id="services-link" class="nav-links" tabindex="-1">Services</a></li>
-                <li><a id="about-link" class="nav-links" tabindex="-1">About</a></li>
-                <li><a id="contact-link" class="nav-links" tabindex="-1">Contact</a></li>
-            </ul>
+        <nav id="navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+            </div>
+            <div id="menu-navbar" class="collapse navbar-collapse">
+                <ul id="navbar-list" class="nav navbar-nav">
+                    <li><a id="home-link" class="nav-links"  tabindex="-1">Home</a></li>
+                    <li><a id="services-link" class="nav-links" tabindex="-1">Services</a></li>
+                    <li><a id="about-link" class="nav-links" tabindex="-1">About</a></li>
+                    <li><a id="contact-link" class="nav-links" tabindex="-1">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         <div class="slideshow-container">
             <div id="carousel" class="carousel slide" data="carousel" data-interval="false">
