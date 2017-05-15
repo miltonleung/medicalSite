@@ -7,7 +7,9 @@ $(document).ready(function () {
         $("#carousel").carousel(index);
         $(".selected").removeClass("selected");
         $(this.children[0]).addClass("selected");
-        $(".navbar-toggle").click()
+        if (window.matchMedia('(max-width: 767px)').matches) {
+            $(".navbar-toggle").click()
+        }
     });
 
     $("#left-carousel").click(function() {
@@ -27,7 +29,7 @@ $(document).ready(function () {
         }
         setSelected(currentIndex);
     });
-    
+
     $("#contact-inline-link").click(function() {
         $("#carousel").carousel(3);
         $(".selected").removeClass("selected");
