@@ -201,7 +201,7 @@ button {
 }
 .footer ul li {
     display: inline;
-    padding: 0 2em;
+    padding: 0 1em;
 }
 .footer li a {
     color: #6D6D6D;
@@ -316,6 +316,9 @@ button {
         height: 3.5rem;
         line-height: 3.5rem;
         background: #F9F9F9;   
+    }
+    .footer ul li {
+        padding: 0 2em;
     }
 }
 @media (min-width: 1200px) {
