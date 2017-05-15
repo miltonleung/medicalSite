@@ -100,11 +100,14 @@ a {
     color: #8BC53B;
 }
 #home-list {
-    width: 50%;
+    width: 300px;
     margin: 0 auto;
     padding-right: 40px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+}
+#home-list > ul > li {
+    text-align: left;
 }
 #contact-inline-link {
     text-decoration: underline;
