@@ -137,6 +137,12 @@ a {
 #services .container p {
     padding-top: 25px;
 }
+#about p {
+    text-align: left;
+}
+#services br {
+    line-height: 80%;
+}
 #contact #contact-info h2 {
     font-size: 2rem; 
     text-align: left;
@@ -307,6 +313,10 @@ button {
     #wrapper-inside {
         padding-bottom: 3.5rem;
     }
+    body, html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 }
 @media (max-width: 576px) {
     #home-list {
@@ -341,11 +351,6 @@ button {
     }
     #footer #navigation li {
         margin: 0 5px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-    #services .service-block-left {
-        margin-bottom: 60px;
     }
 }
 @media (min-width: 1200px) {
