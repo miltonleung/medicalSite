@@ -100,6 +100,8 @@ a {
     color: #8BC53B;
 }
 #home-list {
+    width: 50%;
+    margin: 0 auto;
     padding-right: 40px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -304,6 +306,11 @@ button {
     }
     #wrapper-inside {
         padding-bottom: 3.5rem;
+    }
+}
+@media (max-width: 576px) {
+    #home-list {
+        width: 70%;
     }
 }
 @media (min-width: 992px) {
