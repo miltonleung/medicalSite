@@ -161,6 +161,10 @@ a {
     margin-top: 0.5rem;
     float: right;
 }
+#contact #contact-info #form-text {
+    text-align: center;
+    padding: 1em;
+}
 #submit-button {
     color: white;
     width: 123px;
@@ -324,6 +328,22 @@ button {
     }
     #priv-links {
         text-align: right;
+    }
+    #form-text {
+        display: none;
+    }
+}
+@media (max-width: 990px) {
+    #services .service-block-right {
+        padding-left: 0px;
+    }
+    #footer #navigation li {
+        margin: 0 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    #services .service-block-left {
+        margin-bottom: 60px;
     }
 }
 @media (min-width: 1200px) {
