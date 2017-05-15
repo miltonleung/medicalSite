@@ -37,6 +37,8 @@ a {
     max-height: 16em;
 }
 #navbar {
+    margin: 0 auto;
+    max-width: 1200px;
     background-color: #f9f9f9;
     border-top: 0.5px solid #eee;
     border-bottom: 1px solid #ccc;
@@ -54,24 +56,15 @@ a {
 #navbar .nav > li > a:focus,
 #navbar .nav > li > a.selected {
     color: #272727;
-    background-color: #f7f7f7;
+    background-color: #f9f9f9;
     box-shadow: inset 0 4px 0 0 #8BC53B;
     outline: none;
-}
-.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;
 }
 #navbar .navbar-toggle .icon-bar {
     background-color: #555;
 }
-.dropdown-menu {
-    width: 18em;
-}
-.dropdown-menu > li > a {
-    font-size: 1.4em;
-}
-.fa {
-    padding-left: 1em;
+#menu-navbar {
+    padding: 0;
 }
 .slideshow-container {
     padding-top: 2em;
@@ -146,6 +139,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.5rem;
+    line-height: 2.8rem;
 }
 #contact .contact-label {
     color: #5F6062;
@@ -183,7 +177,7 @@ button {
     border: none;
 }
 .footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.18);
@@ -295,6 +289,9 @@ button {
 @media (min-width:768px) {
     .footer ul > li:not(:last-child) {
         border-right:1px solid #005571;
+    }
+    #navbar {
+        width: 95%;
     }
 }
 @media (min-width: 1200px) {
