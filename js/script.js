@@ -7,6 +7,7 @@ $(document).ready(function () {
         $("#carousel").carousel(index);
         $(".selected").removeClass("selected");
         $(this.children[0]).addClass("selected");
+        $(".navbar-toggle").click()
     });
 
     $("#left-carousel").click(function() {
