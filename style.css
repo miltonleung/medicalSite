@@ -216,7 +216,7 @@ button {
 }
 .footer p {
     color: #6D6D6D;
-    margin-left: 2em;
+    margin-left: 1em;
     margin-bottom: 0;
     font-size: 1.1em;
 }
@@ -303,14 +303,13 @@ button {
         vertical-align: middle;
         max-height: 15em;
     }
-    #priv-links {
-        text-align: right;
-    }
     #wrapper-inside {
         padding-bottom: 3.5rem;
     }
+}
+@media (min-width: 992px) {
     .footer {
-        margin-top: -3.5rem;
+        margin-top: -3.6rem;
         width: 100%;
         box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.18);
         height: 3.5rem;
@@ -319,6 +318,12 @@ button {
     }
     .footer ul li {
         padding: 0 2em;
+    }
+    .footer p {
+        margin-left: 2em;
+    }
+    #priv-links {
+        text-align: right;
     }
 }
 @media (min-width: 1200px) {
